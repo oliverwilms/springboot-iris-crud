@@ -5,6 +5,7 @@ services:
     build: 
       context: iris-db
       dockerfile: Dockerfile
+    command: --check-caps false
     restart: always
     ports: 
       - 19800:1972
